@@ -12,7 +12,11 @@ public class Item {
     boolean imported;
 
     public Item(int quantity,String name, double price, boolean imported) {
-        setPrice(price); setName(name); setImported(imported); setQuantity(quantity);
+
+        this.quantity = quantity;
+        this.name = name;
+        this.price = price;
+        this.imported = imported;
     }
     public double getPrice() {
         return price;
@@ -30,19 +34,9 @@ public class Item {
         return imported;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public String toString(){
+    return quantity + " " + name + String.format("%.2f",price);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public void setImported(boolean imported) {
-        this.imported = imported;
-    }
 }

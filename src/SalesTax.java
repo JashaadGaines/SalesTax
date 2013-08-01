@@ -2,6 +2,7 @@ import com.sun.deploy.util.ArrayUtil;
 import com.sun.deploy.util.StringUtils;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -11,6 +12,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,16 +22,25 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class SalesTax {
+
+    public static void main(String[] args) throws IOException {
+        SalesTax salesTax = new SalesTax();
+        ArrayList<Item> arrayList = salesTax.readInput("/Users/Thoughtworker/Documents/SalesTax.txt");
+        for (Item item : arrayList) {
+
+            System.out.println(item);
+        }
+    }
+
     double totalTax = 0.00, grandTotal = 0.00;
 
-    public String readInput(String filename) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(filename));
-        String input = null;
+    public ArrayList readInput(String filename) throws IOException {
+        Scanner reader = new Scanner(new FileReader(filename));
         ArrayList<Item> itemList = new ArrayList<Item>();
-        while (!reader.readLine().isEmpty()) {
-            itemList.add(itemParser(reader.readLine()));
+        while (reader.hasNext()) {
+            itemList.add(itemParser(reader.nextLine()));
         }
-        return input;
+        return itemList;
     }
 
     public Item itemParser(String lineItem) {
@@ -38,16 +49,7 @@ public class SalesTax {
         String[] newWords = new String[words.length - 2];
         System.arraycopy(words, 0, newWords, 0, newWords.length);
         String goodItems = concatenateArray(Arrays.copyOfRange(newWords, 1, newWords.length));
-        System.out.println("Words : "+Arrays.toString(words));
-        System.out.println("newWords : " + Arrays.toString(newWords));
         return new Item(Integer.parseInt(newWords[0]), goodItems, price, checkForWord(lineItem, "imported"));
-    }
-
-    public boolean checkGood(String goods) {
-        if (goods.equals("pills") || goods.equals("book") || goods.equals("chocolates"))
-            return true;
-        else
-            return false;
     }
 
     public double calculateSalesTax(double price, String lineItem) {
@@ -97,16 +99,6 @@ public class SalesTax {
         totalTax = roundTax(totalTax);
         grandTotal = roundTax(grandTotal);
     }
-
-    public String printItem(String lineItem, Double price) {
-        String[] words = lineItem.split(" ");
-        words[words.length - 1] = price.toString();
-        words[words.length - 2] = ":";
-
-        return concatenateArray(words);
-
-    }
-
 
     public String concatenateArray(String[] array) {
         String concat = "";
