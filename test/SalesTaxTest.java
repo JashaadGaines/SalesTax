@@ -78,7 +78,7 @@ public class SalesTaxTest {
 
         assertThat(salesTax.printItem("1 book at 12.49", 12.49),is("1 book : 12.49 "));
         assertThat(salesTax.printItem("1 music CD at 16.49", 16.49),is("1 music CD : 16.49 "));
-        assertThat(salesTax.printItem("1 chocolate bar at 0.85", 0.85),is("1 chocolate bar : 0.85 "));
+        assertThat(salesTax.printItem("1 chocolate bar at 0.85", 0.85),is("1 chocolate bar: 0.85 "));
     }
 
     @Test
