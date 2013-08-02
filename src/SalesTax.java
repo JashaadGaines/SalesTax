@@ -1,17 +1,9 @@
-import com.sun.deploy.util.ArrayUtil;
-import com.sun.deploy.util.StringUtils;
-
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -22,11 +14,12 @@ import java.util.Scanner;
  * To change this template use File | Settings | File Templates.
  */
 public class SalesTax {
+    static ArrayList<Item> itemList = new ArrayList<Item>();;
 
     public static void main(String[] args) throws IOException {
         SalesTax salesTax = new SalesTax();
-        ArrayList<Item> arrayList = salesTax.readInput("/Users/Thoughtworker/Documents/SalesTax.txt");
-        for (Item item : arrayList) {
+        salesTax.readInput("/Users/Thoughtworker/Documents/SalesTax.txt");
+        for (Item item : itemList) {
 
             System.out.println(item);
         }
@@ -34,13 +27,11 @@ public class SalesTax {
 
     double totalTax = 0.00, grandTotal = 0.00;
 
-    public ArrayList readInput(String filename) throws IOException {
+    public void readInput(String filename) throws IOException {
         Scanner reader = new Scanner(new FileReader(filename));
-        ArrayList<Item> itemList = new ArrayList<Item>();
         while (reader.hasNext()) {
             itemList.add(itemParser(reader.nextLine()));
         }
-        return itemList;
     }
 
     public Item itemParser(String lineItem) {

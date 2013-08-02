@@ -6,6 +6,7 @@ import java.io.IOException;
 import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.matchers.JUnitMatchers.containsString;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,7 +26,7 @@ public class SalesTaxTest {
     @Test
     public void shouldReadFromTextFile() throws IOException {
         String filename = "/Users/Thoughtworker/Documents/SalesTax.txt";
-        assertTrue(salesTax.readInput(filename).equals("1 book at 12.49\n" +
+        assertThat(salesTax.readInput(filename), containsString("1 book at 12.49\n" +
                 "1 music CD at 14.99\n" +
                 "1 chocolate bar at 0.85"));
     }
