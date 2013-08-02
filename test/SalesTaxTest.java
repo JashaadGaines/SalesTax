@@ -26,9 +26,8 @@ public class SalesTaxTest {
     @Test
     public void shouldReadFromTextFile() throws IOException {
         String filename = "/Users/Thoughtworker/Documents/SalesTax.txt";
-        assertThat(salesTax.readInput(filename), containsString("1 book at 12.49\n" +
-                "1 music CD at 14.99\n" +
-                "1 chocolate bar at 0.85"));
+        salesTax.readInput(filename);
+        assertThat(salesTax.itemList.get(0).getName(),is("book "));
     }
 
     @Test
@@ -97,6 +96,11 @@ public class SalesTaxTest {
         assertTrue(newGood.getQuantity() == 1 ) ;
         assertTrue(newGood.getPrice() == 12.49);
         assertTrue(newGood.isImported() == false);
+    }
+
+    @Test
+    public void shouldPrintGrandTotal(){
+
     }
 
 }

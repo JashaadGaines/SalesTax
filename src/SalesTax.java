@@ -14,7 +14,7 @@ import java.util.Scanner;
  * To change this template use File | Settings | File Templates.
  */
 public class SalesTax {
-    static ArrayList<Item> itemList = new ArrayList<Item>();;
+     static ArrayList<Item> itemList = new ArrayList<Item>();
 
     public static void main(String[] args) throws IOException {
         SalesTax salesTax = new SalesTax();

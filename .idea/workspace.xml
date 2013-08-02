@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/SalesTax.java" line="41" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/src/SalesTax.java" line="33" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f876276b-4de2-4ead-b1fe-66b47ac429ca" name="Default" comment="" />
     <ignored path="salesTax.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/SalesTaxTest.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375382443331" ignored="false" />
-    <file path="/fragment.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375391771941" ignored="false" />
-    <file path="/SalesTax.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375391340562" ignored="false" />
+    <file path="/SalesTaxTest.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375462087623" ignored="false" />
+    <file path="/fragment.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375461502237" ignored="false" />
+    <file path="/SalesTax.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375461714578" ignored="false" />
     <file path="/Item.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375393168902" ignored="false" />
     <file path="/ItemTest.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375392230199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,23 +77,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SalesTaxTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SalesTaxTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/SalesTaxTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="3" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0">
+            <state line="103" column="4" selection-start="3312" selection-end="3312" vertical-scroll-proportion="0.88235295">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalesTax.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SalesTax.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="952" selection-end="952" vertical-scroll-proportion="0.023847377">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1134#1140#0" expanded="true" />
-              </folding>
+            <state line="17" column="57" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +107,7 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+            <state line="18" column="26" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,18 +123,16 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/SalesTaxTest.java" />
-        <option value="$PROJECT_DIR$/src/SalesTax.java" />
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/test/ItemTest.java" />
+        <option value="$PROJECT_DIR$/src/SalesTax.java" />
+        <option value="$PROJECT_DIR$/test/SalesTaxTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="22" />
-    <option name="width" value="960" />
-    <option name="height" value="790" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -167,8 +162,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +210,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,7 +221,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.intentionPowerPack" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloWorld/src/com/example/MarsRover/ProgramTest.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -234,45 +229,22 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SalesTax">
-    <configuration default="false" name="SalesTaxTest.shouldParseItem" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="salesTax" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SalesTaxTest" />
-      <option name="METHOD_NAME" value="shouldParseItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SalesTaxTest.shouldReadFromTextFile">
     <configuration default="false" name="SalesTax" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="SalesTax" />
@@ -359,6 +331,29 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="SalesTaxTest.shouldReadFromTextFile" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="salesTax" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SalesTaxTest" />
+      <option name="METHOD_NAME" value="shouldReadFromTextFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -371,19 +366,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -412,6 +394,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -451,19 +446,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SalesTaxTest.shouldParseItem" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SalesTax" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemName" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndName" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndNamed" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SalesTax" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemName" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndName" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndNamed" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SalesTaxTest.shouldReadFromTextFile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SalesTax" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndNamed" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndName" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemName" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SalesTaxTest.shouldParseItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SalesTaxTest.shouldReadFromTextFile" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SalesTax" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndNamed" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemQuantityAndName" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldContainItemName" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -481,8 +476,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="22" width="960" height="790" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -495,19 +490,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32793018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945295" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -586,10 +581,35 @@
     <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="25" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1134#1140#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SalesTaxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="25" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,13 +647,6 @@
         <state line="444" column="37" selection-start="17762" selection-end="17781" vertical-scroll-proportion="0.62015504" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/SalesTaxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="3" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="46" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
@@ -643,18 +656,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
+        <state line="18" column="26" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="952" selection-end="952" vertical-scroll-proportion="0.023847377">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1134#1140#0" expanded="true" />
-          </folding>
+        <state line="17" column="57" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SalesTaxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="4" selection-start="3312" selection-end="3312" vertical-scroll-proportion="0.88235295">
+          <folding />
         </state>
       </provider>
     </entry>
