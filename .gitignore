@@ -1,3 +1,6 @@
-.idea/*
+.idea/misc.xml
+.idea/findbugs-idea.xml
 .idea/workspace.xml
 .idea/findbugs-idea.xml
+.idea/workspace.xml
+
