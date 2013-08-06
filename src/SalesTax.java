@@ -14,11 +14,8 @@ import java.util.Scanner;
  * To change this template use File | Settings | File Templates.
  */
 public class SalesTax {
-<<<<<<< HEAD
-     static ArrayList<Item> itemList = new ArrayList<Item>();
-=======
     static ArrayList<Item> itemList = new ArrayList<Item>();
->>>>>>> V: took out semicolon
+    double totalTax = 0.00, grandTotal = 0.00;
 
     public static void main(String[] args) throws IOException {
         SalesTax salesTax = new SalesTax();
@@ -27,9 +24,9 @@ public class SalesTax {
 
             System.out.println(item);
         }
-    }
+        //System.out.println("grandtotal= " + salesTax.grandTotal);
 
-    double totalTax = 0.00, grandTotal = 0.00;
+    }
 
     public void readInput(String filename) throws IOException {
         Scanner reader = new Scanner(new FileReader(filename));
@@ -41,6 +38,7 @@ public class SalesTax {
     public Item itemParser(String lineItem) {
         String[] words = lineItem.split(" ");
         double price = Double.parseDouble(words[words.length - 1]);
+        addToTotals(price, 0);
         String[] newWords = new String[words.length - 2];
         System.arraycopy(words, 0, newWords, 0, newWords.length);
         String goodItems = concatenateArray(Arrays.copyOfRange(newWords, 1, newWords.length));
@@ -83,7 +81,7 @@ public class SalesTax {
     }
 
     public Double roundTax(double totalTax) {
-        DecimalFormat number = new DecimalFormat("0.000");
+        DecimalFormat number = new DecimalFormat("0.00");
         return Double.parseDouble(number.format(totalTax));
     }
 

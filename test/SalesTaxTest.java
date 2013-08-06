@@ -28,6 +28,8 @@ public class SalesTaxTest {
         String filename = "/Users/Thoughtworker/Documents/SalesTax.txt";
         salesTax.readInput(filename);
         assertThat(salesTax.itemList.get(0).getName(),is("book "));
+        assertThat(salesTax.itemList.get(1).getName(),is("music CD "));
+        assertThat(salesTax.itemList.get(2).getPrice(),is(0.85));
     }
 
     @Test
@@ -40,7 +42,6 @@ public class SalesTaxTest {
 
     @Test
     public void shouldCalculateTaxForItem() {
-
         assertThat(salesTax.calculateSalesTax(5, "CD"), is(.50));
         assertThat(salesTax.calculateSalesTax(5, "book"), is(0.));
         assertThat(salesTax.calculateSalesTax(5, "pills"), is(0.));
@@ -96,6 +97,12 @@ public class SalesTaxTest {
         assertTrue(newGood.getQuantity() == 1 ) ;
         assertTrue(newGood.getPrice() == 12.49);
         assertTrue(newGood.isImported() == false);
+    }
+
+    @Test
+    public void shouldCalculateGrandTotals(){
+
+        assertThat(salesTax.grandTotal, is(28.33));
     }
 
     @Test
