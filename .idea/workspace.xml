@@ -74,10 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SalesTaxTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SalesTaxTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/SalesTaxTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="34" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.93167704">
+            <state line="40" column="34" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Item.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="14" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
+            <state line="9" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.023291925">
               <folding />
             </state>
           </provider>
@@ -122,10 +122,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/SalesTax.java" />
         <option value="$PROJECT_DIR$/test/ItemTest.java" />
         <option value="$PROJECT_DIR$/test/SalesTaxTest.java" />
+        <option value="$PROJECT_DIR$/src/Item.java" />
       </list>
     </option>
   </component>
@@ -648,13 +648,6 @@
         <state line="431" column="11" selection-start="18041" selection-end="18054" vertical-scroll-proportion="0.22695035" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="14" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="26" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
@@ -671,10 +664,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/SalesTaxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="34" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.93167704">
+        <state line="40" column="34" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.023291925">
+          <folding />
         </state>
       </provider>
     </entry>
