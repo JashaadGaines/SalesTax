@@ -32,12 +32,6 @@ public class SalesTax {
 
     public static void addToTotals(double price, double tax) {
         totalTax += tax;
-    }
-
-
-
-    public void addToTotals(double price, double totalTax) {
-        this.totalTax += totalTax;
         grandTotal += price;
     }
 

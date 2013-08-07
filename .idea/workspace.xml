@@ -6,9 +6,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/SalesTaxTest.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375462087623" ignored="false" />
     <file path="/fragment.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375461502237" ignored="false" />
-    <file path="/SalesTax.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375890246629" ignored="false" />
+    <file path="/SalesTax.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375895133869" ignored="false" />
     <file path="/Item.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375889927420" ignored="false" />
-    <file path="/ItemTest.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375890117537" ignored="false" />
+    <file path="/ItemTest.java" changelist="f876276b-4de2-4ead-b1fe-66b47ac429ca" time="1375895184064" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,19 +85,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalesTax.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
+      <file leaf-file-name="ItemParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ItemParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="26" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
+            <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SalesTax.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="18" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.9882075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.023291925">
+            <state line="9" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,8 +115,10 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="45" column="4" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,10 +133,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/SalesTax.java" />
-        <option value="$PROJECT_DIR$/test/ItemTest.java" />
         <option value="$PROJECT_DIR$/test/SalesTaxTest.java" />
         <option value="$PROJECT_DIR$/src/Item.java" />
+        <option value="$PROJECT_DIR$/src/SalesTax.java" />
+        <option value="$PROJECT_DIR$/test/ItemTest.java" />
       </list>
     </option>
   </component>
@@ -245,7 +256,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ItemTest">
+  <component name="RunManager" selected="Application.SalesTax">
     <configuration default="false" name="SalesTaxTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="salesTax" />
@@ -455,9 +466,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldHaveTenPercentTaxForItem" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SalesTax" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SalesTax" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldHaveTenPercentTaxForItem" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.shouldCalculateTaxForItem" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.SalesTaxTest" />
       </list>
@@ -488,12 +499,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67113096" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.67261904" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32738096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -503,7 +515,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -572,17 +583,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="46" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -612,7 +618,9 @@
     <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -645,19 +653,21 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/src.zip!/java/text/DecimalFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="431" column="11" selection-start="18041" selection-end="18054" vertical-scroll-proportion="0.22695035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
+        <state line="431" column="11" selection-start="18041" selection-end="18054" vertical-scroll-proportion="0.22695035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+        <state line="9" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItemParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -671,9 +681,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Item.java">
+    <entry file="file://$PROJECT_DIR$/test/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="229" selection-end="229" vertical-scroll-proportion="0.023291925">
+        <state line="45" column="4" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SalesTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="18" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.9882075">
           <folding />
         </state>
       </provider>

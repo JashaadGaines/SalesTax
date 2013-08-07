@@ -27,7 +27,9 @@ public class ItemTest {
         Item item1 = new Item(1, "book", 10.00, false);
         assertThat(item.getTax(), is(1.50));
         assertThat(item1.getTax(), is(0.));
+    }
 
+    @Test
     public void shouldHaveTenPercentTaxForItem(){
         Item item = new Item(1, "Some Item", 1.00, false);
         assertThat(item.getTax(), is(0.10));
