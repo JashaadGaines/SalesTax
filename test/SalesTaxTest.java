@@ -2,8 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-
-import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -37,7 +35,4 @@ public class SalesTaxTest {
     public void shouldCalculateGrandTotals(){
         assertThat(salesTax.grandTotal, is(28.33));
     }
-
-
-
 }

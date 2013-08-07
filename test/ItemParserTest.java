@@ -1,25 +1,33 @@
+import org.junit.Before;
 import org.junit.Test;
 
-import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class ItemParserTest {
     private ItemParser itemParser;
+    Item item;
 
-
-    @Test
-    public void shouldParseItem() {
-        Item item = itemParser.parseItem("1 music cd at 14.99");
-        assertThat(item.getName(), is("book "));
-        assertTrue(item.getQuantity() == 1 ) ;
-        assertTrue(item.getPrice() == 12.49);
+    @Before
+    public void setUp(){
+        itemParser = new ItemParser();
+        item = itemParser.parseItem("1 music cd at 14.99");
     }
 
     @Test
-    public void shouldConcatenateArrayToString() {
-        String[] newline = {"The", "Big", "dog", "ate", "little", "animals"};
-        assertThat(itemParser.concatenateArray(newline), is("The Big dog ate little animals "));
+    public void shouldGetQuantityFromParsedString() {
+        assertThat(item.getQuantity(), is(1));
     }
+
+    @Test
+    public void shouldGetItemNameFromParsedString(){
+        assertThat(item.getName(), is("music cd "));
+    }
+
+    @Test
+    public void shouldGetPriceFromParsedString(){
+        assertThat(item.getPrice(), is(14.99));
+    }
+
 
 }

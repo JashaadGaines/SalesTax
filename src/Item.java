@@ -12,7 +12,6 @@ public class Item {
         this.name = name;
         this.price = price;
         this.imported = imported;
-        calculateSalesTax();
     }
 
     public double getPrice() {
@@ -32,16 +31,14 @@ public class Item {
     }
 
     public void calculateSalesTax() {
-//        if (!name.contains("pills") && !name.contains("book") && !name.contains("chocolate")) {
-//            tax += roundNumber(price * .1, .05);
-//        }
-//        if(imported) {
-//            tax += roundNumber(price * .05, .05);
-//        }
-//        price += tax;
-
+        if (!name.contains("pill") && !name.contains("book") && !name.contains("chocolate")) {
+            tax += roundNumber(price * .1, .05);
+        }
+        if(imported) {
+            tax += roundNumber(price * .05, .05);
+        }
+        price += tax;
     }
-
 
     public  Double roundNumber(double i, double v){
         return Math.ceil(i/v) * v;

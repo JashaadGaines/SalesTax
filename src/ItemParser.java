@@ -6,8 +6,7 @@ public class ItemParser {
 
         String[] words = lineItem.split(" ");
         Item item = new Item(Integer.parseInt(words[0]), extractGoodItem(words), extractPrice(words), lineItem.contains("imported"));
-//        addToTotals(item.getPrice(), item.getTax());
-        System.out.println(item);
+
         return item;
     }
 
