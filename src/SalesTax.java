@@ -18,6 +18,11 @@ public class SalesTax {
         System.out.println(salesTax);
     }
 
+    public static double round(double i, double v) {
+        return Math.round(i / v) * v;
+    }
+
+
     public void readInput(String filename) throws IOException {
         Scanner reader = new Scanner(new FileReader(filename));
         while (reader.hasNext()) {
@@ -27,6 +32,12 @@ public class SalesTax {
 
     public static void addToTotals(double price, double tax) {
         totalTax += tax;
+    }
+
+
+
+    public void addToTotals(double price, double totalTax) {
+        this.totalTax += totalTax;
         grandTotal += price;
     }
 

@@ -31,6 +31,7 @@ public class Item {
         return tax;
     }
 
+<<<<<<< HEAD
     public void calculateSalesTax() {
 //        if (!name.contains("pills") && !name.contains("book") && !name.contains("chocolate")) {
 //            tax += roundNumber(price * .1, .05);
@@ -44,6 +45,23 @@ public class Item {
 
     public Double roundNumber(double totalTax, double v){
         return Math.ceil(totalTax/v)*v;
+=======
+    private void calculateSalesTax() {
+//        if (!name.contains("pills") && !name.contains("book") && !name.contains("chocolate")) {
+//            tax += roundNumber(price * .1,.05);
+//        }
+//        if(imported) {
+//            tax += roundNumber(price * .05,.05);
+//        }
+//        price += tax;
+//        return tax;
+        tax = (price * .1);
+    }
+
+
+    public  Double roundNumber(double i, double v){
+        return Math.ceil(i/v) * v;
+>>>>>>> Blank Commit jG
     }
 
     public String toString(){
