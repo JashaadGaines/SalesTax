@@ -1,30 +1,34 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
+import static java.lang.Double.parseDouble;
 
 public class ItemParser {
 
     public Item parseItem(String lineItem) {
 
-        String[] words = lineItem.split(" ");
-        Item item = new Item(Integer.parseInt(words[0]), extractGoodItem(words), extractPrice(words), lineItem.contains("imported"));
-
-        return item;
+        List<String> words = new ArrayList<String>(Arrays.asList(lineItem.split(" ")));
+        double price = extractPrice(words);
+        return new Item(Integer.parseInt(words.get(0)), extractGoodItem(words), price, lineItem.contains("imported"));
     }
 
-    private double extractPrice(String[] line){
-        double price = Double.parseDouble(line[line.length - 1]);
-        return price;
+    private double extractPrice(List<String> line){
+        return parseDouble(getLastElement(line));
     }
 
-    private String extractGoodItem(String[] line){
-        String[] newWords = new String[line.length - 2];
-        System.arraycopy(line, 0, newWords, 0, newWords.length);
-        String goodItems = concatenateArray(Arrays.copyOfRange(newWords, 1, newWords.length));
-        return goodItems;
+    private String getLastElement(List<String> line) {
+        return line.get(line.size()-1);
     }
 
-    public String concatenateArray(String[] array) {
+    private String extractGoodItem(List<String> line){
+        line = line.subList(1, line.size()-2);
+        return concatenateArray(line);
+    }
+
+    public String concatenateArray(List<String> list) {
         String concat = "";
-        for (String item : array) {
+        for (String item : list) {
             concat += item + " ";
         }
         return concat;

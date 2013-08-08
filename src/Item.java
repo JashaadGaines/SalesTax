@@ -1,13 +1,12 @@
 
 public class Item {
-    private double price;
-    private String name;
     private int quantity;
+    private String name;
+    private double price;
     private boolean imported;
     private double tax;
 
-    public Item(int quantity,String name, double price, boolean imported) {
-
+    public Item(int quantity, String name, double price, boolean imported) {
         this.quantity = quantity;
         this.name = name;
         this.price = price;
@@ -27,17 +26,13 @@ public class Item {
     }
 
     public double getTax() {
-        return tax;
-    }
-
-    public void calculateSalesTax() {
         if (!name.contains("pill") && !name.contains("book") && !name.contains("chocolate")) {
             tax += roundNumber(price * .1, .05);
         }
         if(imported) {
             tax += roundNumber(price * .05, .05);
         }
-        price += tax;
+        return tax;
     }
 
     public  Double roundNumber(double i, double v){
@@ -45,6 +40,6 @@ public class Item {
     }
 
     public String toString(){
-        return quantity + " " + name + String.format("%.2f",price);
+        return quantity + " " + name + String.format("%.2f",price+tax);
     }
 }

@@ -8,7 +8,7 @@ public class ItemTest {
     Item item;
 
     @Test
-    public void shouldContainItemQuantityAndNamed(){
+    public void shouldConvertItemToString(){
         item = new Item(1,"book",10.00,false);
         assertThat(item.toString(), containsString("book"));
         assertThat(item.toString(), containsString("1"));
@@ -24,25 +24,31 @@ public class ItemTest {
     @Test
     public void shouldHaveTenPercentTaxForItemWithDifferentPrice(){
         Item item = new Item(1, "Some Item", 1.10, false);
-        double tax = item.getTax();
-        assertThat(item.getTax(), is(.11+Math.ulp(.11)));
+        assertThat(item.getTax(), is(.15 + Math.ulp(.15)));
     }
 
     @Test
     public void shouldHaveAdditionalFivePercentImportTaxWhenItemIsImported(){
          Item item = new Item(1, "Some Item", 1.00, true);
-        double tax = item.getTax();
         assertThat(item.getTax(), is(.15+Math.ulp(.15)));
     }
 
     @Test
     public void shouldNotTaxBooksPillsOrChocolates(){
         Item item = new Item(1, "book", 1.00, false);
-        Item item2 = new Item(1, "pill", 1.00, false);
-        Item item3 = new Item(1, "chocolate", 1.00, false);
         assertThat(item.getTax(), is(0.));
-        assertThat(item2.getTax(), is(0.));
-        assertThat(item3.getTax(), is(0.));
+    }
+
+    @Test
+    public void shouldNotTaxPills(){
+        Item item = new Item(1, "pill", 1.00, false);
+        assertThat(item.getTax(), is(0.));
+    }
+
+    @Test
+    public void shouldNotTaxChocolates(){
+        Item item = new Item(1, "chocolate", 1.00, false);
+        assertThat(item.getTax(), is(0.));
     }
 
     @Test

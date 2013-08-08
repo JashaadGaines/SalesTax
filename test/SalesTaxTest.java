@@ -24,15 +24,14 @@ public class SalesTaxTest {
     }
 
     @Test
-    public void shouldAddToOverallTotal() {
-        double price = 10.00, totalTax = .5;
-        salesTax.addToTotals(price, totalTax);
-        assertThat(salesTax.totalTax, is(.50));
-        assertThat(salesTax.grandTotal, is(10.50));
+    public void shouldAddPriceToGrandTotal() {
+        salesTax.addToTotals(salesTax.itemList.get(1).getPrice(), 0);
+        assertThat(salesTax.grandTotal, is(14.99));
     }
 
     @Test
-    public void shouldCalculateGrandTotals(){
-        assertThat(salesTax.grandTotal, is(28.33));
+    public void shouldCalculateGrandTotal(){
+        salesTax.addToTotals(0, salesTax.itemList.get(1).getTax());
+        assertThat(salesTax.totalTax, is(1.5));
     }
 }
