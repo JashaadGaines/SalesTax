@@ -7,7 +7,7 @@ public class SalesTax {
     private static ArrayList<Item> itemList = new ArrayList<Item>();
     static double totalTax = 0.00, grandTotal = 0.00;
     private ItemParser translator = new ItemParser();
-    private static SalesTax salesTax = new SalesTax();
+    static SalesTax salesTax = new SalesTax();
 
     public static void main(String[] args) throws IOException {
         salesTax.readInput("/Users/Thoughtworker/Documents/SalesTax.txt");
@@ -32,6 +32,10 @@ public class SalesTax {
             System.out.println(itemList.get(i));
         }
         System.out.println(salesTax);
+    }
+
+    public static ArrayList<Item> getItemList() {
+        return itemList;
     }
 
     public String toString() {

@@ -18,20 +18,20 @@ public class SalesTaxTest {
     @Test
     public void shouldReadFromTextFile() throws IOException {
 
-        assertThat(salesTax.itemList.get(0).getName(),is("book "));
-        assertThat(salesTax.itemList.get(1).getName(),is("music CD "));
-        assertThat(salesTax.itemList.get(2).getPrice(),is(0.85));
+        assertThat(salesTax.getItemList().get(0).getName(),is("book "));
+        assertThat(salesTax.getItemList().get(1).getName(),is("music CD "));
+        assertThat(salesTax.getItemList().get(2).getPrice(),is(0.85));
     }
 
     @Test
     public void shouldAddPriceToGrandTotal() {
-        salesTax.addToTotals(salesTax.itemList.get(1).getPrice(), 0);
+        salesTax.addToTotals(salesTax.getItemList().get(1).getPrice(), 0);
         assertThat(salesTax.grandTotal, is(14.99));
     }
 
     @Test
     public void shouldCalculateGrandTotal(){
-        salesTax.addToTotals(0, salesTax.itemList.get(1).getTax());
+        salesTax.addToTotals(0, salesTax.getItemList().get(1).getTax());
         assertThat(salesTax.totalTax, is(1.5));
     }
 }
